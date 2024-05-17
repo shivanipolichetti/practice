@@ -1,12 +1,15 @@
 import './App.css';
-import Info from './components/classcomponents/info';
-import Hello from './components/functionalcomponents/hello';
+import Image from './components/functionalcomponents/props/img';
+import { Products } from './components/functionalcomponents/props/products';
 
 function App() {
+ 
   return (
     <div >
-     <Hello/>
-     <Info/>
+     <Image size={200}/>
+     <Products name={"apple"} price={3.00}/>
+     <Products name={"mango"} price={4.50}/>
+     <Products name={"fruits"}/>
     </div>
   );
 }
